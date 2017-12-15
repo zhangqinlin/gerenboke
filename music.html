@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>喜欢的音乐</title>
+		<link rel="stylesheet" type="text/css" href="./css/自定义栅格.css" />
+		<link rel="stylesheet" type="text/css" href="./css/webProduct.css" />
+		<link rel="stylesheet" type="text/css" href="./css/public.css" />
+		<link rel="stylesheet" type="text/css" href="./css/iconfont.css" />
+		<link rel="shortcut icon" href="./img/木.png">
+	</head>
+
+	<style type="text/css">
+		.music_con{color: #fff; margin: 10px 20px;height: 100%;}
+		.music_con .container{background: #000;height: 100%;}
+		.music_con .container .title{background: #121212;font-size: 18px;padding-left: 5px;height: 40px;line-height: 40px;}
+		.music_con .container .title,.info-item{width: 100%;border-bottom: 1px solid #303030;}
+		.music_con .container .name,.oparate,.singer{float: left; }
+		.music_con .container .name,.singer{width: 300px;}
+		.music_con .container .info-item .name .order{display :inline-block;width:20px;height: 20px;background: orange;border-radius:50%;color: #fff;vertical-align: middle;margin-right: 5px;text-align: center;line-height: 20px;}
+	    .music_con .container .info-item{font-size: 14px;padding-left: 10px;height: 40px;line-height: 40px; font-family: Tahoma;}
+	    .music_con .container .info-item:hover{background: #121212;}
+	    .music_con .container .info-item .vol{display: none;}
+		.music_con .info{width: 100%;}
+		.music_con .info  i{display: inline-block;width: 20px;height: 20px;font-size: 20px;float: left;margin-top: 10px;}
+		.music_con .info  span{display: inline-block;}
+		.music_con .info>span:nth-of-type(1){padding: 0  5px;float: left;}
+		.music_con .oparate .play{cursor: pointer;color: red;}
+		.music_con .oparate .play:hover{background: #EF99B6;}
+		.pause:hover{background: #1686BA;}
+		.music_con .oparate .pause{cursor: pointer;color: #fff;}
+		
+			
+	</style>
+	<body>
+		<div id="myHome">
+			<!--头部开始-->
+			<div id="header" class="clearfix">
+				<div class="header_fix">
+					<div class="container">
+						<div class="row clearfix" >
+							<a href="index.html"  class="col-xs-6 logo"><i></i></a>
+						<ul>
+							<a href="index.html" class="col-xs-6 ">
+								<li>
+									<i class="iconfont icon-mu"></i>
+									<span>首页</span>
+								</li>
+							</a>
+							<a href="aboutMe.html" class="col-xs-6 ">
+								<li class="aboutMe">
+									<i class="iconfont icon-wo"></i>
+									<span>关于我</span>
+								</li>
+							</a>
+							<a href="music.html" class="col-xs-6 ">
+								<li>
+									<i class="iconfont icon-yinle"></i> 音乐
+								</li>
+							</a>
+							<a href="photos.html" class="col-xs-6 ">
+								<li>
+									<i class="iconfont icon-zhaopian"></i>
+									<span>相册</span>
+								</li>
+							</a>
+							<a href="diary.html" class="col-xs-6 ">
+								<li>
+									<i class="iconfont icon-diary"></i>
+									<span>日记</span>
+								</li>
+							</a>
+							<a href="travel.html" class="col-xs-6 ">
+								<li>
+									<i class="iconfont icon-lvhang1"></i> 旅行
+								</li>
+							</a>
+
+							<a href="contactME.html" class="col-xs-6 ">
+								<li>
+									<i class="iconfont icon-dianhua"></i>
+									<span>联系我</span>
+								</li>
+							</a>
+							<a href="webProduct.html" class="col-xs-6 ">
+								<li>
+									<i class="iconfont icon-xiangmu"></i>
+									<span>web作品展示</span>
+								</li>
+							</a>
+						</ul>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
+			<!--头部结束-->
+
+			<!--内容部分-->
+			<div class="music_con">
+				<div class="container">
+					<div class="info">
+						<div class="title clearfix">
+								<span class="name"><i class="iconfont icon-zan"></i>歌曲名</span>
+								<span class="singer">歌手</span>
+								<span >操作</span>
+						</div>
+						<div class="info-item clearfix">
+								<span class="name">
+									<span class="order">1</span>yesterdayOnceMore
+								</span>
+								<span class="singer">by2</span>
+								<div class="oparate">
+									<span class="play"><i class="iconfont icon-yinle"></i>播放</span>
+								    <span class="pause"><i class="iconfont icon-yinle"></i>暂停</span>
+								    <audio src="./music/YesterdayOnceMore.mp3"  class="mu" loop="loop" ></audio>
+								    <input type="range" name="" id="" value="" class="vol"/>
+								</div>
+								
+					    </div>
+					    <div class="info-item clearfix">
+								<span class="name"><span class="order">2</span>麦小兜 - 9420</span>
+								<span class="singer">by2</span>
+								<div class="oparate">
+									<span class="play"><i class="iconfont icon-yinle"></i>播放</span>
+								    <span class="pause"><i class="iconfont icon-yinle"></i>暂停</span>
+								    <audio src="./music/9420.mp3"  class="mu"  loop="loop" ></audio>
+								    <input type="range" name="" id="" value="" class="vol"/>
+								</div>
+								
+					    </div>
+					    <div class="info-item clearfix">
+								<span class="name"><span class="order">3</span>一眼万年</span>
+								<span class="singer">by2</span>
+								<div class="oparate">
+									<span class="play"><i class="iconfont icon-yinle"></i>播放</span>
+								    <span class="pause"><i class="iconfont icon-yinle"></i>暂停</span>
+								      <audio src="./music/9420.mp3"  class="mu"  loop="loop" ></audio>
+								    <input type="range" name="" id="" value="" class="vol"/>
+								</div>
+					    </div>
+					    <div class="info-item clearfix">
+								<span class="name"><span class="order">4</span>9420</span>
+								<span class="singer">by2</span>
+								<div class="oparate">
+									<span class="play"><i class="iconfont icon-yinle"></i>播放</span>
+								    <span class="pause"><i class="iconfont icon-yinle"></i>暂停</span>
+								       <audio src="./music/9420.mp3"  class="mu"  loop="loop" ></audio>
+								    <input type="range" name="" id="" value="" class="vol"/>
+								</div>
+					    </div>
+					    <div class="info-item clearfix">
+								<span class="name"><span class="order">5</span>凉凉</span>
+								<span class="singer">张碧晨</span>
+								<div class="oparate">
+									<span class="play"><i class="iconfont icon-yinle"></i>播放</span>
+								    <span class="pause"><i class="iconfont icon-yinle"></i>暂停</span>
+								       <audio src="./music/9420.mp3"  class="mu"  loop="loop"  ></audio>
+								    <input type="range" name="" id="" value="" class="vol"/>
+								</div>
+					    </div>
+					  
+					</div>
+				</div>
+				
+			</div>
+
+		<div id="footer">
+			<div class='container'>
+				<div class='footer_link'>友情链接：
+					<a href="#"></a>
+				</div>
+				<p>本网站作者：张琴琳，所有的内容由本人原创，侵权必究。</p>
+			</div>
+		</div>
+		<div class="toTOP">
+			<div class="f_top">
+
+			</div>
+		</div>
+
+		</div>
+		
+		<script type="text/javascript">
+			var play = document.getElementsByClassName('play');
+			var pause = document.getElementsByClassName('pause');
+	      	var music = document.getElementsByClassName('mu');
+	      	var vol = document.getElementsByClassName('vol');
+	      	var xuhao = 0;
+	      	for(var i =0 ;i < play.length; i++){
+	      		play[i].xuhao = i;
+	      		pause[i].xuhao = i
+	      		play[i].onclick = function (){
+	             music[this.xuhao].play();
+                  for(var k = 0;k<vol.length;k++){
+                  	vol[k].style.display = 'none';
+                  	vol[k].xuhao = k;
+                  	vol[xuhao].onchange=function(){
+//                		vol[xuhao].volume = 0;
+////                		console.log(vol[xuhao].volume);
+                  	}
+                  }
+	               vol[this.xuhao].style.display = 'inline-block';
+	              	}
+	      		pause[i].onclick = function (){
+	             music[this.xuhao].pause();
+	             vol[this.xuhao].style.display = 'none';
+	              	}
+	      	}
+	      	
+		</script>
+	</body>
+
+</html>

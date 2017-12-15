@@ -1,0 +1,34 @@
+/*样式重置*/
+html,body,span,p,input,i,img,ul,li,div,a{margin: 0;padding: 0;box-sizing: border-box;}
+#header .container ul a.web{background: #08C3B4;}
+
+#myHome .container.webcon{width: 1200px;margin-top: 5px;}
+.container .menu{width: 20%;height: 100%;float: left;background: #404040;border-radius: 5px;}
+.container .menu ul a{height:100%;color: #fff;display:block;line-height: 60px;padding-left: 5px;}
+.container .menu ul a.xuanzhuan{background: #08C3B4;}
+.container .menu ul a:hover{background: #08C3B4;}
+
+.container .mainContent{width: 80%;height: 100%;border: 1px solid red;float: left;position: relative;background: #999;}
+/*.container .mainContent .webDesc{width: 200px;height: 200px;margin: 0 auto;position: absolute;left: 50%;top:50%;margin-left: -100px;margin-top: -100px;border: 1px solid red;background: #999;}*/
+/*#content{flex-basis: 80%;flex-grow: 1;flex-shrink: 1;background: #999;}*/
+#content .lbt{padding-bottom: 100px;}
+#content .lbt #box {width: 200px;height: 200px;perspective: 60000px;perspective-origin:-100px 1000px ;margin:100px auto;transform-style: preserve-3d;animation: run 30s infinite linear;}
+#content #box>div{position: absolute;width: 200px;height:200px;background: deeppink;line-height: 50px;color: #fff;font-size: 50px;text-align: center;line-height: 100px;opacity: .9;border: 10px solid #fff;}
+#content #box>div img{width: 100%;height: 100%;}
+.item1 {transform: rotatey(0deg) translatez(400px);}
+.item2{transform: rotatey(30deg) translatez(400px);}
+.item3{transform: rotatey(60deg) translatez(400px);}
+.item4{transform: rotatey(90deg) translatez(400px);}
+.item5{transform: rotatey(120deg) translatez(400px);}
+.item6{transform: rotatey(150deg) translatez(400px);}
+.item7{transform: rotatey(180deg) translatez(400px);}
+.item8{transform: rotatey(210deg) translatez(400px);}
+.item9{transform: rotatey(240deg) translatez(400px);}
+.item10{transform: rotatey(270deg) translatez(400px);}
+.item11{transform: rotatey(300deg) translatez(400px);}
+.item12{transform: rotatey(330deg) translatez(400px);}
+.item14{transform: rotatey(0deg);}
+@keyframes run {
+	from {transform: rotate3d(0,1,0,0deg);}
+	to {transform: rotate3d(0,1,0,360deg);}
+			}

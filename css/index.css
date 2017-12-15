@@ -1,0 +1,63 @@
+/*轮播图部分*/
+#Flash{width:100%;margin:0 auto;flex-grow: 0;flex-shrink: 1;padding-top: 5px;}
+#Flash .container .F_left{height: 500px;border: 1px solid #e5e5e5;}
+#Flash .container .F_left .photo{margin: 0 0 5px 0;width: 100%;height: 50%;box-shadow: 2px 2px 10px rgba(0,0,0,.3);}
+#Flash .container .F_left .photo img{width: 100%;height: 100%;border: 3px solid #fff;border-radius:5px;}
+#Flash .container .F_left  ul{width: 100%;height: 49%;background: #579DC5;margin: 0 auto;margin-top: 5px;padding: 0 5px;box-shadow: 2px 2px 10px rgba(0,0,0,.5);}
+#Flash .container .F_left  ul li{line-height: 30px;font-size:16px;white-space: wrap;overflow: hidden;}
+#Flash .container .F_left  ul li i {color: #FFA500;}
+#Flash .container .Flash_list{height:500px;overflow:hidden;position: relative;border-radius: 10px;}
+#Flash .container .Flash_list  a{display:block;width: 100%;height:100%;float: left;}
+#Flash .container .Flash_list  a img{width: 100%;height: 100%;}
+#Flash .container .turn{width:20px ;height: 20px;border-bottom: 5px solid #fff;position: absolute;top:50%;}
+#Flash  .container .turn:hover{opacity: .7;cursor: pointer;}
+#Flash .container  .turn_left{border-left: 5px solid #fff;transform: rotate(45deg);left: 20px;display: none;}
+#Flash .container .turn_right{border-right: 5px solid #fff;transform: rotate(-45deg);right: 20px;display: none;}
+#Flash .container .Flash_list .flash_cover{width: 50%;background: rgba(0,0,0,0); position: absolute;left:25%;top:10%;}
+#Flash .container .Flash_list .flash_cover .welcome {line-height: 40px;text-align: center;font-size:20px;font-weight: bold;color: deeppink;/*position: absolute;left: 50%;top: 50%;margin-left: -300px;margin-top: -150px;*/}
+#Flash .container .Flash_list .flash_cover .welcome .more{display: block;width:150px;height: 30px;background: #579DC5;margin: 0 auto;border-radius: 5px;line-height: 30px;color: #fff;margin:10px 20px;}
+#Flash .container .Flash_list .flash_cover .welcome .introduce{perspective: 30000px;perspective-origin: 50% 50%;transform-style: preserve-3d;/*animation: run 5s infinite ;*/}
+@-webkit-keyframes run{
+	from{transform: rotateY(0deg);}
+	to{transform: rotateY(200deg);}
+}
+/*轮播图部分结束*/
+
+/*首页栅格布局公共样式*/
+.desc{width: 100%;}
+.desc .desc-item{border: 1px solid #067BF3;border-radius: 5px;padding: 5px;position: relative;cursor: pointer;}
+.desc .desc-item:hover{box-shadow: 2px 2px 15px rgba(0,0,0,.5);border-style: solid;left: -1px;top: -1px;}
+.title{width: 100%;height:30px;background: #1A1C1E;margin:10px 0px;line-height: 30px;font-size: 18px;border-radius: 5px;font-weight: 700;}
+.title i{font-size: 18px;margin-left: 5px;}
+.readMore{padding: 0px 5px;background: #EEA1A1;border-radius: 10px;font-size: 14px;color: #000;position: absolute;right: 10px;bottom: 10px;}
+.readMore:hover{background: #F44634;}
+.desc-item h3{font-size: 16px;line-height: 2em;color: #EF792A;font-weight: 800;}
+.desc-item img{border-radius: 5px;}
+.desc-item h3 img{width: 80px;height: 60px;vertical-align: middle;margin-right: 5px;}
+.desc-item p{font-size: 0.7rem;text-indent: 2em;line-height: 18px;letter-spacing: 2px;margin:5px 0;}
+.desc-item a{}
+.desc-item .date{display: inline-block;color:#F5AF76;font-size: 14px;}
+/*首页栅格布局公共样式结束*/
+
+/*日记-消逝在时光里的记忆*/
+.desc .diary .desc-item{background: #1E6B8D;}
+.desc  .diary{width: 100%;height: 100%;}
+/*日记-消逝在时光里的记忆结束*/
+
+/*旅行想册开始*/
+.xiangce{}
+.xiangce .desc-item{background: #2E2E2E;color: #BBBBBB;}
+.xiangce img{width: 100%;height: 180px;margin: 0 auto;margin-bottom: 10px;}
+.xiangce .city{color: #fff;font-size: 16px;}
+/*旅行想册结束*/
+
+/*对前端的热爱*/
+.webProuct .readMore{padding: 10px;}
+.webProuct .desc-item{height: 300px;background-repeat: no-repeat;}
+.webProuct .desc-item.xiaomi{background:url(../img/xiaomi.png) no-repeat;background-size: contain; }
+.webProuct .desc-item.canvas{background:url(../img/canvas.jpg)no-repeat;background-size: 100%;}
+.webProuct .desc-item.meituan{background:url(../img/meituan.png)no-repeat;background-size: 100%;}
+.webProuct .desc-item.taobao{background:url(../img/taobao.jpg)no-repeat;background-size: 100%;}
+.webProuct .desc-item h3{color: #00FCE7;text-align: center;width: 100px;background: #5F5959;border-radius: 10px;position: absolute;bottom: 10px;}
+.webProuct .desc-item img{width:90%;height:300px;display: block;margin: 0 auto;margin-bottom: 3px;}
+/*对前端的热爱结束*/

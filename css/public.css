@@ -1,0 +1,43 @@
+/*样式重置*/
+html,body,span,p,input,i,img,ul,li,div,a,h1,h2,h3,h4,h6,h5{margin: 0;padding: 0;box-sizing: border-box;}
+html,body{height: 100%;}
+a{text-decoration: none;}
+li{list-style: none;}
+html,body{height: 100%;font-size: 18px;color: #fff;background:url(../img/72019_top.jpg) no-repeat;background-size: 100% 100%;overflow: auto;}
+
+/*公共样式*/
+#myHome{height: 100%;}
+.clearfix:after{display: block;content: '';clear: both;}
+.container{max-width: 1200px;margin: 0 auto;position: relative;}
+/*#snowFlow{width: 100%;height: 100%;}*/
+i{display: inline-block;width: 20px;height: 20px;vertical-align: middle;font-size: 20px;line-height: 20px;color: #E698B2;}
+.hua_box{position: fixed;z-index:15555;}
+.pic{position: absolute; opacity: 0; animation: mysnow 5s;height: 30px; } 
+/*首页飘花瓣样式*/
+ @keyframes mysnow { 0% { bottom: 100%; opacity: 0; } 50% { opacity: 1; transform: rotate(720deg);} 100% { transform: rotate(0deg); opacity: 0; bottom: 0%;} }
+ 
+/*头部开始*/
+#header{width: 100%;background: #1A1C1E ;}
+#header .header_fix{height:60px;width:100%;/*position: fixed;left: 0;top: 0;*/z-index: 55;}
+#header .header_fix .container .logo{float: left;overflow: hidden;height: 60px;}
+#header .header_fix .container .logo i{display: block;width: 60px;height: 60px;background: url(../img/qinlin.jpg) ;background-size: 100% ;float: left;line-height: 60px;border-radius: 50%;}
+#header .container ul li  i{display: inline-block;width: 20px;height: 20px;vertical-align: middle;font-size: 20px;line-height: 20px;}
+#header .container ul{height: 100%;margin-left: 10px;float: left;}
+#header .container ul  a{display:block;float: left;background: #1A1C1E ;border-right: 1px solid #303030;border-radius: 5px;}
+#header .container ul li{float: left;color: #fff;padding: 0px 15px;/*transition: background-color 1s;*/height: 100%;cursor: pointer;}
+#header .container ul a:hover{background: #08C3B4;}
+#header .container ul a{height:100%;color: #fff;display:inline-block;line-height: 60px;}
+/*头部结束*/
+
+/*底部区域*/
+#footer{height:10%;background: #1A1C1E;color: #666;padding: 5px 0px;font-size: 16px;}
+#footer .container .footer_link a{color: #E0E0E0;text-decoration: underline;font-size: 14px;color: #666;}
+#footer .container .footer_link a:hover{color: #D0809B;}
+#footer .container p{line-height: 50px;text-align: center;}
+/*底部区域结束*/
+
+/*回顶部小图标*/
+.toTOP{width: 40px;height: 50px;background: #CB567D;position: fixed;right: 2px;bottom: 100px;cursor: pointer;}
+.toTOP:hover{background: #741535;}
+.toTOP .f_top{width:20px ;height: 20px;border-bottom: 5px solid #fff;border-right: 5px solid #fff;transform: rotate(-135deg);position: absolute;left: 50%;top: 20px;margin-left: -10px;}
+/*回顶部小图标结束*/

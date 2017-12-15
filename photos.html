@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>web成果展示</title>
+		<link rel="stylesheet" type="text/css" href="./css/自定义栅格.css" />
+		<link rel="stylesheet" type="text/css" href="./css/webProduct.css" />
+		<link rel="stylesheet" type="text/css" href="./css/public.css" />
+		<link rel="stylesheet" type="text/css" href="./css/iconfont.css" />
+		<link rel="shortcut icon" href="./img/木.png">
+	</head>
+
+	<style type="text/css">
+		img {
+			width: 350px;
+			height: 300px;
+			border: 10px solid #fff;
+			transition: width 2s 1s, transform 1s;
+		}
+		
+		#wall {
+			width: 1000px;
+			height: 1000px;
+			border: 1px solid #fff;
+			margin: 20px auto;
+			position: relative;
+		}
+		
+		#wall .item1 {
+			position: absolute;
+			left: 0;
+			top: 0;
+			transform: rotate(0deg);
+		}
+		
+		#wall .item1:hover {
+			z-index: 999999 !important;
+		}
+		
+		#wall img:hover {
+			width: 450px;
+			height: 420px;
+			transform: rotate(360deg);
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function() {
+			var item = document.getElementsByClassName('item1');
+			f();
+
+			function f() {
+				for(var i = 0; i < item.length; i++) {
+					var new_left = parseInt(Math.random() * 800);
+					var new_top = parseInt(Math.random() * 600);
+					var z_index = parseInt(Math.random() * 20);
+					var dushu = parseInt(Math.random() * 60);
+					item[i].style.left = new_left + 'px';
+					item[i].style.top = new_top + 'px';
+					item[i].style.transform = 'rotate(' + dushu + 'deg)';
+					item[i].style.zIndex = z_index;
+				}
+			}
+
+			setInterval(f, 10000);
+		}
+	</script>
+
+	<body>
+		<div id="myHome">
+			<!--头部开始-->
+			<div id="header" class="clearfix">
+				<div class="header_fix">
+					<div class="container">
+						<div class="row clearfix" >
+							<a href="index.html"  class="col-xs-6 logo"><i></i></a>
+						<ul>
+							<a href="index.html" class="col-xs-6 ">
+								<li>
+									<i class="iconfont icon-mu"></i>
+									<span>首页</span>
+								</li>
+							</a>
+							<a href="aboutMe.html" class="col-xs-6 ">
+								<li class="aboutMe">
+									<i class="iconfont icon-wo"></i>
+									<span>关于我</span>
+								</li>
+							</a>
+							<a href="music.html" class="col-xs-6 ">
+								<li>
+									<i class="iconfont icon-yinle"></i> 音乐
+								</li>
+							</a>
+							<a href="photos.html" class="col-xs-6 ">
+								<li>
+									<i class="iconfont icon-zhaopian"></i>
+									<span>相册</span>
+								</li>
+							</a>
+							<a href="diary.html" class="col-xs-6 ">
+								<li>
+									<i class="iconfont icon-diary"></i>
+									<span>日记</span>
+								</li>
+							</a>
+							<a href="travel.html" class="col-xs-6 ">
+								<li>
+									<i class="iconfont icon-lvhang1"></i> 旅行
+								</li>
+							</a>
+
+							<a href="contactME.html" class="col-xs-6 ">
+								<li>
+									<i class="iconfont icon-dianhua"></i>
+									<span>联系我</span>
+								</li>
+							</a>
+							<a href="webProduct.html" class="col-xs-6 ">
+								<li>
+									<i class="iconfont icon-xiangmu"></i>
+									<span>web作品展示</span>
+								</li>
+							</a>
+						</ul>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
+			<!--头部结束-->
+
+			<!--内容部分-->
+			<div class="contact">
+				<div class="container">
+					<div class="info">
+						<div class="info-item">
+							<div id="wall">
+								<div class="item1" id="pic">
+									<img src="./img/1.jpg" />
+								</div>
+								<div class="item1">
+									<img src="./img/2.jpg" />
+								</div>
+								<div class="item1">
+									<img src="./img/3.jpg" />
+								</div>
+								<div class="item1">
+									<img src="./img/4.jpg" />
+								</div>
+								<div class="item1">
+									<img src="./img/5.jpg" />
+								</div>
+								<div class="item1">
+									<img src="./img/6.jpg" />
+								</div>
+								<div class="item1">
+									<img src="./img/7.jpg" />
+								</div>
+								<div class="item1">
+									<img src="./img/8.jpg" />
+								</div>
+								<div class="item1">
+									<img src="./img/9.jpg" />
+								</div>
+								<div class="item1">
+									<img src="./img/10.jpg" />
+								</div>
+								<div class="item1">
+									<img src="./img/11.jpg" />
+								</div>
+								<div class="item1">
+									<img src="./img/12.jpg" />
+								</div>
+								<div class="item1">
+									<img src="./img/13.jpg" />
+								</div>
+								<div class="item1">
+									<img src="./img/14.jpg" />
+								</div>
+								<div class="item1">
+									<img src="./img/15.jpg" />
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="footer">
+				<div class='container'>
+					<div class='footer_link'>友情链接：
+						<a href="#"></a>
+					</div>
+					<p>本网站作者：张琴琳，所有的内容由本人原创，侵权必究。</p>
+				</div>
+			</div>
+			<div class="toTOP">
+				<div class="f_top">
+
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>
